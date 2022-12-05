@@ -1,0 +1,17 @@
+*******************************************
+# Write your MySQL query statement below
+
+SELECT E1.Name as Employee 
+
+FROM Employee e1, Employee e2 # Implicit Inner Join
+
+WHERE 
+
+    E1.ManagerID IS NOT NULL  # Optional condition
+
+    AND E1.ManagerId = E2.Id
+
+    AND E1.Salary > E2.Salary
+    
+    
+    ***********************************
